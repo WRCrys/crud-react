@@ -35,11 +35,11 @@ export class FormProduct extends Component {
                     <div className="form-row">
                         <div className="col-md-6">
                             <Label for="preco">Preço: </Label>
-                            <Input id="preco" type="text" value={this.state.model.preco} placeholder="R$" onChange={e => this.setValues(e, 'preco')} />
+                            <Input id="preco" type="number" value={this.state.model.preco} placeholder="R$" onChange={e => this.setValues(e, 'preco')} />
                         </div>
                         <div className="col-md-6">
                             <Label for="quantidade">Quantidade: </Label>
-                            <Input id="quantidade" type="text" value={this.state.model.quantidade} placeholder="Quantidade do produto" onChange={e => this.setValues(e, 'quantidade')} />
+                            <Input id="quantidade" type="number" value={this.state.model.quantidade} placeholder="Quantidade do produto" onChange={e => this.setValues(e, 'quantidade')} />
                         </div>
                     </div>
                 </FormGroup>
